@@ -1,1 +1,49 @@
-// TODO
+.posts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 3rem;
+}
+
+.infoContainer {
+  display: flex;
+  margin-top: 1.5rem;
+  gap: 1.5rem;
+}
+
+.infoContent {
+  display: flex;
+  align-items: center;
+  svg {
+    margin-right: 0.5rem;
+  }
+}
+
+.infoText {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1rem;
+  text-align: left;
+}
+
+.title {
+  font-size: 1.625rem;
+  font-weight: bold;
+  line-height: 2.125rem;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  margin-top: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  text-align: justified;
+}
+
+.buttonNext {
+  background: transparent;
+  border: none;
+  color: var(--highlight);
+}
