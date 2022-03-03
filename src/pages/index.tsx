@@ -4,6 +4,7 @@ import Head from 'next/head';
 import { ReactElement, useState } from 'react';
 import * as Prismic from '@prismicio/client';
 import { format } from 'date-fns';
+import ptBR from 'date-fns/locale/pt-BR';
 import { FiCalendar, FiUser } from 'react-icons/fi';
 import { getPrismicClient } from '../services/prismic';
 
@@ -60,7 +61,9 @@ export default function Home({ postsPagination }: HomeProps): ReactElement {
                 <div className={styles.infoContent}>
                   <FiCalendar />
                   <time className={styles.infoText}>
-                    {format(new Date(first_publication_date), 'd MMM yyy')}
+                    {format(new Date(first_publication_date), 'd MMM yyy', {
+                      locale: ptBR,
+                    })}
                   </time>
                 </div>
                 <div className={styles.infoContent}>

@@ -32,6 +32,11 @@
   font-weight: bold;
   line-height: 2.125rem;
   letter-spacing: -0.5px;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--highlight);
+  }
 }
 
 .subtitle {
